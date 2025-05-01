@@ -12,7 +12,7 @@ services:
       - key: PORT
         value: 9000
 
-  - type: static
+  - type: static-site
     name: gumroad-document-manager-client
     buildCommand: cd client && npm install && npm run build
     publishDir: client/build
